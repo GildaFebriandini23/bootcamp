@@ -1,0 +1,30 @@
+<!-- <p>
+{{testData}}  -->
+<!-- untuk memanggil yang data yang sudah diatur di ts -->
+<!-- </p> -->
+<!-- <br/>
+<input [(ngModel)]="testDataTwoWays">
+{{testDataTwoWays}}
+  -->
+<!-- <button (click)="testAlert()">Alert</button> -->
+
+<br><br>
+<app-customer *ngIf = "showChild"></app-customer>
+<button (click)="show()">Show</button>
+<button (click)="hide()">Hide</button>
+<br><br>
+<!-- 
+<input type = "text" placeholder="Masukkan tulisan" [(ngModel)] = "input_data"/>
+<p>Anda memasukkan tulisan : {{input_data}}</p>
+<app-testlagi [nilai]="input_data"
+(reset)="onPencet($event)"></app-testlagi> -->
+
+<h3> Parent Component </h3>
+<label>Parent Component : </label>
+<input type = "text" #pcomponent (keyup)="0"/>
+
+<p>Value Of Child component is : {{CData}}</p>
+<app-testlagi [PData]="pcomponent.value" (childEvent)="CData=$event"></app-testlagi>
+
+
+

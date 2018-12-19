@@ -1,0 +1,10 @@
+<p>
+  Parent!!
+</p>
+ First Name : <input type="text" placeholder="Masukkan First Name" [(ngModel)] = "first_name"/>
+<p>Anda memasukkan First Name : "{{first_name}}"</p>
+<!-- Last Name : <input type="text" placeholder="Masukkan Last Name" [(ngModel)] = "last_name"/>
+<p>Anda memasukkan Last Name : "{{last_name}}"</p> -->
+
+
+ <app-child [first_name]="first_name" (reset)="onPencet($event)"></app-child> 
